@@ -9,35 +9,39 @@
     /* background: linear-gradient(to right, #CBCE91FF, #EA738DFF); */
     
 }
-.calculator {
+.container {
+    width: fit-content;
+    margin: 10vh auto;
+    box-shadow: 0 0 10px gray;
+}
+.calculator-buttons {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 80vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(10vh, auto) repeat(5, 100px);
-    width: 400px;
-    margin: 5vh auto;
-    box-shadow: 0 0 10px gray;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    width: 200px;
+    margin: 0 auto;
+    
 }
-
-.calculator button {
+.calculator-buttons button {
     cursor: pointer;
-    font-size: 3 rem;
     border: 1px solid white;
     outline: none;
     color: white;
 
 }
-.number {
+.dark-button {
     background-color: rgba(30,35,38);
+    font-size: 1.5rem;
 }
-.number:hover {
+.dark-button:hover {
     background-color: rgba(30,35,38,.80);
 }
 .border-radius {
     background-color: rgba(30,35,38);
     border-bottom-left-radius: 5px;
+    font-size: 1.5rem;
 }
 .border-radius:hover {
     background-color: rgba(30,35,38,.80);
@@ -49,35 +53,38 @@
 .span-2:hover {
     background-color: rgba(30,35,38,.80);
 }
-.operand {
+.purple-button {
     background-color: rgb(93, 76, 180);
+    font-size: 1.5rem;
 }
-.operand:hover {
+.purple-button:hover {
     background-color: rgb(93, 76, 180, .90);
 }
-.equal {
+#equal {
     background-color: rgba(254,194,8);
     border-bottom-right-radius: 5px;
+    font-size: 1.5rem;
 }
-.equal:hover {
+#equal:hover {
     background-color: rgba(254,194,8,0.8);
 }
 .display {
-    grid-column: 1 / -1;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+    width: 200px;
+    margin: auto;
     word-wrap: break-word;
     word-break: break-all;
     background-color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    
 }
 .previous-operand{
     font-size: 1rem;
 }
 .current-operand{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }

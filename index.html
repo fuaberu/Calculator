@@ -1,48 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Calculator</title>
-</head>
-<body>
-    
-        
-    <div class="calculator">
-        <div class="display">
-            <div data-previous-operand class="previous-operand">
-                <p></p>
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="display">
+                <p class="previous-operand">0</p>
+                <p id="entry" class="current-operand">1</p>
             </div>
-            <div data-current-operand class="current-operand">
-                <p></p>
-            </div>
+            <div class="calculator-buttons">
+                <button id="clearBut" class="span-2" onclick="clearButPress()">AC</button>
+                <button class="dark-button" onclick="mathButPress('%')">%</button>
+                <button class="purple-button" id="mathBut" onclick="mathButPress('/')">/</button>
+                <button class="dark-button" onclick="numButPress(7)">7</button>
+                <button class="dark-button"onclick="numButPress(8)">8</button>
+                <button class="dark-button"onclick="numButPress(9)">9</button>
+                <button class="purple-button" onclick="mathButPress('*')">*</button>
+                <button class="dark-button"onclick="numButPress(4)">4</button>
+                <button class="dark-button"onclick="numButPress(5)">5</button>
+                <button class="dark-button"onclick="numButPress(6)">6</button>
+                <button class="purple-button" onclick="mathButPress('-')">-</button>
+                <button class="dark-button"onclick="numButPress(1)">1</button>
+                <button class="dark-button"onclick="numButPress(2)">2</button>
+                <button class="dark-button"onclick="numButPress(3)">3</button>
+                <button class="purple-button" onclick="mathButPress('+')">+</button>
+                <button class="dark-button" id="decimalBut" onclick="numButPress('.')">.</button>
+                <button class="dark-button" onclick="numButPress(0)">0</button>
+                <button class="dark-button" id="deleteBut" onclick="deleteButPress()">del</button>
+                <button id="equal" onclick="equalButPress()">=</button>
+            </div>           
         </div>
-        <button data-action class="span-2">AC</button>
-        <button data-operation class="number">%</button>
-        <button data-operation class="operand">÷</button>
-        <button data-number class="number">7</button>
-        <button data-number class="number">8</button>
-        <button data-number class="number">9</button>
-        <button data-operation class="operand">×</button>
-        <button data-number class="number">4</button>
-        <button data-number class="number">5</button>
-        <button data-number class="number">6</button>
-        <button data-operation class="operand">-</button>
-        <button data-number class="number">1</button>
-        <button data-number class="number">2</button>
-        <button data-number class="number">3</button>
-        <button data-operation class="operand">+</button>
-        <button data-number class="border-radius" >.</button>
-        <button data-number class="number">0</button>
-        <button data-action class="number">del</button>
-        <button data-action class="equal">=</button>
-    </div>    
-
-
-
-
-</body>
+    </body>
 </html>
