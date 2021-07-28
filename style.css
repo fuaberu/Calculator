@@ -50,6 +50,7 @@
 .span-2 {
     grid-column: span 2;
     background-color: rgba(30,35,38);
+    font-size: 1.5rem;
 }
 .span-2:hover {
     background-color: rgba(30,35,38,.80);
@@ -88,4 +89,9 @@
 }
 .current-operand{
     font-size: 2rem;
+}
+.footer-link {
+    color: #f4a261;
+    font-weight: bold;
+    transition: all 0.2s;
 }
